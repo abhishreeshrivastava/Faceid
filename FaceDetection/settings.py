@@ -23,9 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'pf8c4w$xdi5o-2801-)i3*y)x$l-55yql9cg3s!ccv*cua4yj#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+DEBUG = True
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -126,5 +125,3 @@ STATIC_URL = '/static/'
 TEMPLATES_DIR= os.path.join(BASE_DIR,'templates')
 STATIC_DIR= os.path.join(BASE_DIR,'static')
 STATICFILES_DIRS=[ STATIC_DIR ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
